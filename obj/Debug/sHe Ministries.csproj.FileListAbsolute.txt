@@ -67,3 +67,9 @@ C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\Microsoft.Owin.Securi
 C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\obj\Debug\sHe Ministries.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\obj\Debug\sHe Ministries.dll
 C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\obj\Debug\sHe Ministries.pdb
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Net.Http.Formatting.dll
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Web.Http.dll
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Web.Http.WebHost.dll
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Net.Http.Formatting.xml
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Web.Http.xml
+C:\Users\Tim\Desktop\VS1\sHe Ministries\sHe Ministries\bin\System.Web.Http.WebHost.xml
