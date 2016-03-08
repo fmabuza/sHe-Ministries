@@ -22,7 +22,18 @@ namespace sHe_Ministries.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.TheMessage = "Send us your prayer request.";
+
+            return View();
+
+        }
+
+        [httpPost]
+        public ActionResult Contact(string message)
+
+        {
+            //TO DO: SEND MESSAGE TO HQ
+            ViewBag.TheMessage = "Thank you. Your prayer request has been received.";
 
             return View();
         }
