@@ -28,7 +28,7 @@ namespace sHe_Ministries.Controllers
 
         }
 
-        [httpPost]
+        [HttpPost]
         public ActionResult Contact(string message)
 
         {
