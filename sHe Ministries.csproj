@@ -209,6 +209,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\images\Armor-of-God.jpg" />
     <Content Include="Content\images\armor.jpg" />
+    <Content Include="Content\images\book.jpg" />
     <Content Include="Content\images\genesis.jpg" />
     <Content Include="Content\images\invite.jpg" />
     <Content Include="Content\images\luke 1.jpg" />
