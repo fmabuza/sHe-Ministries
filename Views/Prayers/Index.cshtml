@@ -8,7 +8,7 @@
 <div id="formSection">
     <h3>@ViewBag.TheMessage</h3>
     <form method="post" id="contactForm">
-        <textarea name="message" id="message" maxlength="500" data-bing="value:message, valueUpdate:'input'"></textarea>
+        <textarea name="message" id="message" maxlength="500" data-bind="value:message, valueUpdate:'input'"></textarea>
         <input type="submit" value="send"/>
         <span data-bind="text:charactersRemaining"></span> characters remaining
     </form>
@@ -34,6 +34,7 @@
 <script>
     $('contactForm').submit(function () {
         $('#progress').show();
-        $.post('', {message: $('#message').val()})
+        $.post('', { message: $('#message').val() });
     })
 </script>
+    }

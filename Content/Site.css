@@ -32,3 +32,9 @@ img {
     background-color: #808080;
 }
 
+.poem {
+    padding: 5px;
+    border: 5px solid #021a40;
+    background-color: #ECA3b9;
+    font-style: italic;
+}
