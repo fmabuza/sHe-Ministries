@@ -208,7 +208,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\images\Armor-of-God.jpg" />
+    <Content Include="Content\images\sHe girls\Armor-of-God.jpg" />
     <Content Include="Content\images\armor.jpg" />
     <Content Include="Content\images\book.jpg" />
     <Content Include="Content\images\carousel images\allens.jpg" />
@@ -252,6 +252,7 @@
     <Content Include="Content\images\sHe girls\sharisma s.jpg" />
     <Content Include="Content\images\sHe girls\Sharisma.jpg" />
     <Content Include="Content\images\sHe girls\sHe logo.jpg" />
+    <Content Include="Content\images\sHe girls\she.jpg" />
     <Content Include="Content\images\sHe girls\Shelby.jpg" />
     <Content Include="Content\images\sHe logo menu.jpg" />
     <Content Include="Content\images\sHe logo.jpg" />
