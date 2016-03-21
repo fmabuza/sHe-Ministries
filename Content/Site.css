@@ -32,13 +32,13 @@ textarea {
 /*all images are trimmed in black and grey border*/
 img {
     padding: 5px;
-    background-color: #fff;
+    background-color: #B0A8A6;
 }
 /*add pink background and black border and italic font*/
 .poem {
     padding: 5px;
     border: 5px solid #021a40;
-    background-color: #A8C170;
+    background-color: #B6DA8B;
     font-style: italic;
 }
 
@@ -55,3 +55,11 @@ img {
      margin-top: -3px;
      margin-right: 5px;
  }
+
+ #countdown span {
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}

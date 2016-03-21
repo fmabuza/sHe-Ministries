@@ -83,25 +83,61 @@
     </div>
 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h3>Winter</h3>
             <li>A Woman's Heart by Beth Moore</li>
             <a href="http://www.lifeway.com/">Purchase</a>
-            <img src="~/Content/images/moore.jpg" alt="0805445528">
+            <img src="~/Content/images/sHe girls/Beth.jpg" alt="0805445528">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h3>Fall</h3>
             <li>Armor of God by Priscilla Shirer</li>
             <a href="http://www.lifeway.com/">Purchase</a>
-            <img src="~/Content/images/Armor-of-God.jpg" alt="USB 9781430040279">
+            <img src="~/Content/images/sHe girls/Priscilla.jpg" alt="USB 9781430040279">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h3>Spring</h3>
             <li>Seamless by Angie Smith</li>
             <a href="http://www.lifeway.com">Purchase</a>
-            <img src="~/Content/images/seamless.jpg" alt="USB 97814300323304">
+            <img src="~/Content/images/sHe girls/Angie.jpg" alt="USB 97814300323304">
         </div>
-        <div class="col-md-6">
+
+        <script type="text/javascript">
+        // set the date we're counting down to
+        var target_date = new Date('Oct, 9, 2014').getTime();
+
+        // variables for time units
+        var days, hours, minutes, seconds, ms_step=10;
+
+        // get tag element
+        var countdown = document.getElementById('countdown');
+
+        setInterval(function () {
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+        min = parseInt(seconds_left / 60);
+        sec = parseInt(seconds_left % 60);
+        ms = parseInt(target_date-current_date);
+
+        // format countdown string + set tag value
+        countdown.innerHTML = ''+
+        '<span class="days">'+days+'<b>Days</b></span>'+
+        '<span class="hours">'+hours+'<b>Hours</b></span>'+
+        '<span class="minutes">'+min+'<b>Minutes</b></span>'+
+        '<span class="seconds">'+sec+'<b>Seconds</b></span>'+
+        '<span class="ms">'+ms+'ms</span>';
+        // this is just for milliseconds only
+        /* countdown.innerHTML =
+        '<span class="ms">'+ms+' ms</span>'; */
+        }, ms_step);
+</script>
+
+
+        <div class="item"><center>
             <h3>Summer</h3>
             <li>Open your Bible by Raechel Myers and Amanda Bible Williams</li>
             <a href="http://www.lifeway.com/Product/open-your-bible-bible-study-book-P005757875">Purchase</a>
