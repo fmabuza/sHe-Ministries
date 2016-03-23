@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using sHe_Ministries.Models.mapping;
 
 namespace sHe_Ministries.Models
 {
@@ -24,7 +25,14 @@ namespace sHe_Ministries.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new PrayersMapping());
+            modelBuilder.Configurations.Add(new PraisesMapping());
+           
 
+            base.OnModelCreating(modelBuilder);
+        }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

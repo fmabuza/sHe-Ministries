@@ -200,6 +200,10 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\mapping\PraisesMapping.cs" />
+    <Compile Include="Models\mapping\PrayersMapping.cs" />
+    <Compile Include="Models\Praises.cs" />
+    <Compile Include="Models\Prayers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

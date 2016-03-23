@@ -1,40 +1,39 @@
-﻿
+﻿@model sHe_Ministries.Models.Prayers
+@model sHe_Ministries.Models.Praises
+
 @{
     ViewBag.Title = "Share";
 }
 
-<h2>Index</h2>
+<h2>Share Your Heart</h2>
+@using (Html.BeginForm())
+    {
 
-<div id="formSection">
-    <h3>@ViewBag.TheMessage</h3>
-    <form method="post" id="contactForm">
-        <textarea name="message" id="message" maxlength="500" data-bind="value:message, valueUpdate:'input'"></textarea>
-        <input type="submit" value="send"/>
-        <span data-bind="text:charactersRemaining"></span> characters remaining
-    </form>
-    
+<div class="row">
+<div class="Col-md-4">
+@Html.LabelFor(m=>m.FirstName)
+@Html.TextBoxFor(m=>m.FirstName)
 </div>
 
+<div class="col-md-4">
+@Html.LabelFor(m => m.LastName)
+@Html.TextBoxFor(m => m.LastName)
+</div>
+
+ <div class="Col-md-4">
+ @Html.LabelFor(m => m.Email)
+ @Html.TextBoxFor(m => m.Email)
+ </div>
+
+ <div class="Col-md-4">
+ @Html.LabelFor(m => m.PrayerRequest)
+ @Html.TextAreaFor(m => m.PrayerRequest)
+ </div>
+        <div>
+
+            <button class="btn btn-primary" type="submit"></button>
+            </div>
+      </div>
+            }
 
 
-@section scripts{
-
-<script src="~/Scripts/knockout-3.4.0.debug.js"></script>
-<script>
-    function ContactViewModel() {
-        var self = this;
-        self.message = ko.observable('');
-        self.charactersRemaining = ko.computed(function () {
-            return 500 - self.message().length;
-        })
-    }
-    ko.applyBindings(new ContactViewModel());
-</script>
-
-<script>
-    $('contactForm').submit(function () {
-        $('#progress').show();
-        $.post('', { message: $('#message').val() });
-    })
-</script>
-    }

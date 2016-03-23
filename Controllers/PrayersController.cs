@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sHe_Ministries.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,21 @@ namespace sHe_Ministries.Controllers
     public class PrayersController : Controller
     {
         // GET: Prayers
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Share()
         {
-            return View();
+
+            return View(new Prayers());
+
+              }
+        [HttpPost]
+        public ActionResult Share (Prayers prayers)
+        {
+            var context = new ApplicationDbContext();
+
+            context.Set<Prayers>().Add(prayers);
+            context.SaveChanges();
+            return RedirectToAction("Share");
         }
     }
 }
