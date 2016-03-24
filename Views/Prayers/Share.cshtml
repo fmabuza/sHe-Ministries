@@ -1,39 +1,51 @@
 ﻿@model sHe_Ministries.Models.Prayers
-@model sHe_Ministries.Models.Praises
+
 
 @{
     ViewBag.Title = "Share";
 }
 
+
+
 <h2>Share Your Heart</h2>
 @using (Html.BeginForm())
-    {
+{
+
+    <script>
+    alert("Please share your prayer request.");
+    </script>
 
 <div class="row">
-<div class="Col-md-4">
+<div class="Col-md-6">
 @Html.LabelFor(m=>m.FirstName)
 @Html.TextBoxFor(m=>m.FirstName)
 </div>
 
-<div class="col-md-4">
+<div class="col-md-6">
 @Html.LabelFor(m => m.LastName)
 @Html.TextBoxFor(m => m.LastName)
 </div>
 
- <div class="Col-md-4">
+ <div class="Col-md-6">
  @Html.LabelFor(m => m.Email)
  @Html.TextBoxFor(m => m.Email)
  </div>
 
- <div class="Col-md-4">
+ <div class="Col-md-6">
  @Html.LabelFor(m => m.PrayerRequest)
  @Html.TextAreaFor(m => m.PrayerRequest)
  </div>
-        <div>
+ 
+<div class="Col-md-6">
+<button class="btn btn-primary" type="submit">Submit</button>
+</div>
+</div>
 
-            <button class="btn btn-primary" type="submit"></button>
-            </div>
-      </div>
-            }
+    <script>
+alert("Thank you. Your prayer request has been received.");
+    </script>
+}
+
+
 
 
