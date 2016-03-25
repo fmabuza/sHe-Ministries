@@ -25,9 +25,8 @@ textarea {
 /*add background color to the nav bar*/
 .navbar{
     background-color:#A8C170; 
-    color:#000;
-    font-color: fff;
-   
+    font-size: 15px;
+      
 }
 /*all images are trimmed in black and grey border*/
 img {
@@ -40,10 +39,13 @@ img {
     border: 5px solid #021a40;
     background-color: #B6DA8B;
     font-style: italic;
+    font-weight: bold;
+    font-style: 20px;
 }
 
 .jumbotron {
     background-color: #CBDF9A;
+    margin: 9px 7px;
     
 }
 
@@ -55,12 +57,11 @@ img {
      margin-top: -3px;
      margin-right: 5px;
  }
+*/
 
- /* Add counterdown banner
- #countdown span {
-  font-size: 26px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
+#main-footer{
+    padding-top: 10px
+    padding-bottom: 10px;
+  
 }
+

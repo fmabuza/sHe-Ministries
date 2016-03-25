@@ -15,14 +15,14 @@ namespace sHe_Ministries.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "sHe is the one that was chosen by Him.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.TheMessage = "Send us your prayer request.";
+            ViewBag.TheMessage = "Please give us your feedback.";
 
             return View();
 
@@ -33,7 +33,7 @@ namespace sHe_Ministries.Controllers
 
         {
             //TO DO: SEND MESSAGE TO HQ
-            ViewBag.TheMessage = "Thank you. Your prayer request has been received.";
+            ViewBag.TheMessage = "Thank you. Your opinion matters to us.";
 
             return View();
         }
