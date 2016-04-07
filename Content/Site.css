@@ -31,7 +31,7 @@ textarea {
 /*all images are trimmed in black and grey border*/
 img {
     padding: 5px;
-    background-color: #B0A8A6;
+   /* background-color: #B0A8A6; */
 }
 /*add pink background and black border and italic font*/
 .poem {
@@ -45,10 +45,16 @@ img {
 
 .jumbotron {
     background-color: #CBDF9A;
-    margin: 9px 7px;
+    margin: 9px 17px;
+    
     
 }
-
+.main {
+    borders: none;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
 .button {
     background-color: #CBDF9A;
 }
